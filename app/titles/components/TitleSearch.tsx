@@ -22,13 +22,11 @@ export default function TitleSearch({
   const [searchTerm, setSearchTerm] = useState('');
   const [isPassiveEffect, setIsPassiveEffect] = useState(false);
   const [isEquipEffect, setIsEquipEffect] = useState(false);
-  const [isFilterOpen, setIsFilterOpen] = useState(false);
   const filterRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (filterRef.current && !filterRef.current.contains(event.target as Node)) {
-        setIsFilterOpen(false);
       }
     };
 
@@ -94,7 +92,6 @@ export default function TitleSearch({
         <select
           value={searchField}
           onChange={(e) => setSearchField(e.target.value)}
-          onClick={() => setIsFilterOpen(true)}
           className="p-2 border rounded-lg min-w-[120px] focus:ring-1 focus:ring-blue-200"
         >
           <option value="all">전체</option>

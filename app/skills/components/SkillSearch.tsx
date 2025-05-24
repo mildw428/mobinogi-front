@@ -1,9 +1,10 @@
 'use client';
 import React, { useState, useRef, useEffect } from 'react';
 import { Job, getJobKorean, JOB_CATEGORIES } from '@/app/types/job';
+import { Skill } from '../data/dummySkills';
 
 interface SkillSearchProps {
-  onSkillsChange: (skills: any[]) => void;
+  onSkillsChange: (skills: Skill[]) => void;
   onSearchTermChange: (term: string) => void;
 }
 
@@ -36,7 +37,7 @@ export default function SkillSearch({
     setSelectedJobs(newJobs);
   };
 
-  const getSelectedItemsPreview = (items: any[], getKoreanName: (item: any) => string) => {
+  const getSelectedItemsPreview = (items: Job[], getKoreanName: (item: Job) => string) => {
     if (items.length === 0) return '전체';
     if (items.length > 2) return `${getKoreanName(items[0])} 외 ${items.length - 1}개`;
     return items.map(getKoreanName).join(', ');

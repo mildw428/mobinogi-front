@@ -1,8 +1,7 @@
 'use client';
 import ItemBox from '@/app/components/ItemBox';
-import { ItemGrade, getItemGradeKorean } from '@/app/types/item';
-import { Rune, RuneType, getRuneTypeKorean } from '@/app/types/rune';
-import { Job, getJobKorean } from '@/app/types/job'
+import { Rune, getRuneTypeKorean } from '@/app/types/rune';
+import { getJobKorean } from '@/app/types/job'
 import React from 'react';
 import { highlightText } from '@/app/utils/highlight';
 // import { Rune } from '../data/dummyRunes'; // TODO: 더미 데이터 타입 정의 후 사용

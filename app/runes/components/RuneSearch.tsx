@@ -64,7 +64,7 @@ export default function RuneSearch({
     setSelectedJobs(newJobs);
   };
 
-  const getSelectedItemsPreview = (items: any[], getKoreanName: (item: any) => string) => {
+  const getSelectedItemsPreview = <T,>(items: T[], getKoreanName: (item: T) => string) => {
     if (items.length === 0) return '전체';
     if (items.length > 2) return `${getKoreanName(items[0])} 외 ${items.length - 1}개`;
     return items.map(getKoreanName).join(', ');
