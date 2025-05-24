@@ -80,7 +80,7 @@ export default function RuneSearch({
 
   const searchRunes = async (params: SearchParams) => {
     try {
-      const response = await fetch('http://localhost:8080/api/runes/search', {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080'}/runes/search`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
