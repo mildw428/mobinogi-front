@@ -14,7 +14,7 @@ interface RuneTableProps {
 
 export default function RuneTable({ runes, searchTerm }: RuneTableProps) {
   return (
-    <div className="overflow-x-auto rounded-xl shadow border bg-white">
+    <div className="overflow-x-auto rounded-xl border bg-white">
       <table className="min-w-full text-sm">
         <thead className="bg-gray-100 border-b">
           <tr>
