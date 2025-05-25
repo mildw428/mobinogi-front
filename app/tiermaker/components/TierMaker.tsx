@@ -39,7 +39,7 @@ const defaultTiers = [
 ];
 
 const TierMaker = forwardRef<TierMakerRef, TierMakerProps>(({ items, initialData }, ref) => {
-  const [tiers, setTiers] = useState(defaultTiers);
+  const [tiers] = useState(defaultTiers);
   const [tierItems, setTierItems] = useState<Record<string, typeof items>>(() => {
     const initialTierItems: Record<string, typeof items> = {
       waiting: [],

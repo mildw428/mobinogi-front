@@ -223,7 +223,6 @@ const TierMakerCreatePage = () => {
         throw new Error('티어메이커 저장에 실패했습니다.');
       }
 
-      const data = await response.json();
       setShowAuthModal(false);
       setUsername('');
       setPassword('');

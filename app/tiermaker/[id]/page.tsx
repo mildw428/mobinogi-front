@@ -5,7 +5,6 @@ import { useParams } from 'next/navigation';
 import TierMaker from '../components/TierMaker';
 import { RuneType } from '@/app/types/rune';
 import { ItemGrade } from '@/app/types/item';
-import { Job } from '@/app/types/job';
 import ItemBox from '@/app/components/ItemBox';
 import { getRuneTypeKorean } from '@/app/types/rune';
 import Script from 'next/script';
