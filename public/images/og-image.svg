@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect width="1200" height="630" fill="#1F2937"/>
+  
+  <!-- 그라데이션 오버레이 -->
+  <rect width="1200" height="630" fill="url(#gradient)"/>
+  
+  <!-- 로고 영역 -->
+  <g transform="translate(100, 150)">
+    <!-- 모비로그 텍스트 -->
+    <text x="0" y="80" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white">
+      모비로그
+    </text>
+    <text x="0" y="160" font-family="Arial, sans-serif" font-size="36" fill="#E5E7EB">
+      마비노기 모바일 정보 사이트
+    </text>
+  </g>
+  
+  <!-- 설명 텍스트 -->
+  <g transform="translate(100, 400)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="24" fill="#9CA3AF">
+      스킬 · 룬 · 타이틀 정보를 한눈에
+    </text>
+  </g>
+  
+  <!-- 그라데이션 정의 -->
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1F2937" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+</svg> 

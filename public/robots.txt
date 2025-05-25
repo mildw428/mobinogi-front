@@ -1,0 +1,6 @@
+# https://mobinogi-front.vercel.app
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mobinogi-front.vercel.app/sitemap.xml 
