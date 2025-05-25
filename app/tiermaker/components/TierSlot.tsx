@@ -15,7 +15,7 @@ const TierSlot: React.FC<TierSlotProps> = ({ id, title, color, children }) => {
       className={`flex items-center gap-4 p-2 rounded-lg`} 
       style={{ backgroundColor: color } }
     >
-      <div className={`w-16 text-center font-bold text-xl`}>{title}</div>
+      <div className={`w-13 text-center font-bold text-xl`}>{title}</div>
       <Droppable droppableId={id} direction="horizontal">
         {(provided) => (
           <div

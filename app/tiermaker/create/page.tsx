@@ -392,9 +392,7 @@ const TierMakerCreatePage = () => {
           </div>
         )}
 
-        <div className="bg-white rounded-lg shadow-lg p-6">
-          <TierMaker ref={tierMakerRef} items={items} />
-        </div>
+        <TierMaker ref={tierMakerRef} items={items} />
         <div className="flex justify-end mb-4">
             <button
               onClick={handleSave}

@@ -142,12 +142,10 @@ const TierMakerViewPage = () => {
         <div className="mb-8">
           <h1 className="text-4xl font-extrabold mb-2 tracking-tight">룬 티어메이커</h1>
         </div>
-        <div className="bg-white rounded-lg shadow-lg p-6">
-          <TierMaker 
-            items={items} 
-            initialData={initialTierData}
-          />
-        </div>
+        <TierMaker 
+          items={items} 
+          initialData={initialTierData}
+        />
       </div>
     </>
   );
