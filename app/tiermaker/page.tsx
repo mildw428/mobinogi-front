@@ -120,8 +120,8 @@ const TierMakerPage = () => {
         <div className="mb-8">
           <h1 className="text-4xl font-extrabold mb-2 tracking-tight">룬 티어메이커</h1>
         </div>
-        <div className="flex justify-between items-center mb-8">
-          <div className="flex items-center gap-4">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
+          <div className="w-full sm:w-auto">
             <div className="flex items-center gap-2">
               <input
                 type="text"
@@ -129,11 +129,11 @@ const TierMakerPage = () => {
                 value={searchInput}
                 onChange={(e) => setSearchInput(e.target.value)}
                 onKeyPress={handleKeyPress}
-                className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full sm:w-auto px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <button
                 onClick={handleSearch}
-                className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+                className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors whitespace-nowrap"
               >
                 검색
               </button>
@@ -141,7 +141,7 @@ const TierMakerPage = () => {
           </div>
           <Link
             href="/tiermaker/create"
-            className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+            className="w-full sm:w-auto text-center px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
           >
             새 티어메이커 만들기
           </Link>
@@ -152,13 +152,13 @@ const TierMakerPage = () => {
             <table className="min-w-full text-sm">
               <thead className="bg-gray-100 border-b">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-1/2">
+                  <th className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-1/2">
                     제목
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-1/4">
+                  <th className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-1/4">
                     작성자
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-1/4">
+                  <th className="px-4 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-1/4">
                     작성일
                   </th>
                 </tr>
@@ -170,17 +170,17 @@ const TierMakerPage = () => {
                     className="hover:bg-gray-50 cursor-pointer"
                     onClick={() => window.location.href = `/tiermaker/${tiermaker.id}`}
                   >
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="text-sm font-medium text-gray-900">
+                    <td className="px-4 sm:px-6 py-4">
+                      <div className="text-sm font-medium text-gray-900 break-words">
                         {tiermaker.name}
                       </div>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="text-sm text-gray-500">
+                    <td className="px-4 sm:px-6 py-4">
+                      <div className="text-sm text-gray-500 break-words">
                         {tiermaker.username}
                       </div>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
+                    <td className="px-4 sm:px-6 py-4">
                       <div className="text-sm text-gray-500">
                         {new Date(tiermaker.createdAt).toLocaleDateString()}
                       </div>
