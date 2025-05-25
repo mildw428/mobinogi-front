@@ -60,19 +60,19 @@ export default function Header() {
         {/* 모바일 메뉴 */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 space-y-4">
-            <Link href="/titles" className="block text-gray-600 hover:text-gray-900">
+            <Link href="/titles" className="block text-gray-600 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>
               타이틀
             </Link>
-            <Link href="/skills" className="block text-gray-600 hover:text-gray-900">
+            <Link href="/skills" className="block text-gray-600 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>
               스킬
             </Link>
-            <Link href="/runes" className="block text-gray-600 hover:text-gray-900">
+            <Link href="/runes" className="block text-gray-600 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>
               룬
             </Link>
-            <Link href="/tiermaker" className="block text-gray-600 hover:text-gray-900">
+            <Link href="/tiermaker" className="block text-gray-600 hover:text-gray-900" onClick={() => setIsMenuOpen(false)}>
               룬 티어메이커
             </Link>
-            <Link href="https://moaform.com/q/gcLmBR" className="block text-gray-600 hover:text-gray-900" target="_blank" rel="noopener noreferrer">
+            <Link href="https://moaform.com/q/gcLmBR" className="block text-gray-600 hover:text-gray-900" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
               문의하기
             </Link>
           </div>
