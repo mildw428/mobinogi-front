@@ -51,6 +51,9 @@ export default function Header() {
             <Link href="/tiermaker" className="text-gray-600 hover:text-gray-900">
               룬 티어메이커
             </Link>
+            <Link href="/characterset" className="text-gray-600 hover:text-gray-900">
+              케릭터 세팅
+            </Link>
             <Link href="https://moaform.com/q/gcLmBR" className="text-gray-600 hover:text-gray-900" target="_blank" rel="noopener noreferrer">
               문의하기
             </Link>
